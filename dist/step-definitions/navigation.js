@@ -12,24 +12,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 (0, _cucumber.Given)(/^I am on the "([^"]*)" page$/, /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(pageId) {
-    var page, globalVariables, globalConfig;
+    var page, globalConfig;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            page = this.screen.page, globalVariables = this.globalVariables, globalConfig = this.globalConfig;
+            page = this.screen.page, globalConfig = this.globalConfig;
             console.log("I am on the ".concat(pageId, " page"));
-            globalVariables.currentScreen = pageId;
-            _context.next = 5;
+            _context.next = 4;
             return (0, _navigationBehavior.navigateToPage)(page, pageId, globalConfig);
 
-          case 5:
-            _context.next = 7;
+          case 4:
+            _context.next = 6;
             return (0, _waitForBehavior.waitFor)(function () {
               return (0, _navigationBehavior.currentPathMatchesPageId)(page, pageId, globalConfig);
             });
 
-          case 7:
+          case 6:
           case "end":
             return _context.stop();
         }
@@ -39,5 +38,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
   return function (_x) {
     return _ref.apply(this, arguments);
+  };
+}());
+(0, _cucumber.Given)(/^I am directed to the "([^"]*)" page$/, /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(pageId) {
+    var page, globalConfig;
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            page = this.screen.page, globalConfig = this.globalConfig;
+            console.log("I am directed to the ".concat(pageId, " page"));
+            _context2.next = 4;
+            return (0, _waitForBehavior.waitFor)(function () {
+              return (0, _navigationBehavior.currentPathMatchesPageId)(page, pageId, globalConfig);
+            });
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2, this);
+  }));
+
+  return function (_x2, _x3) {
+    return _ref2.apply(this, arguments);
   };
 }());

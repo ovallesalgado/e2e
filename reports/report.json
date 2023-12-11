@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 376924813
+              "duration": 469451904
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 480429337
+              "duration": 745323053
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54389438
+              "duration": 100638970
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 274971
+              "duration": 571104
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 8,
             "name": "the \"create contact header\" should contain the text \"Create Contact\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 6983719
+              "duration": 12730795
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26885133
+              "duration": 80320124
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25810875
+              "duration": 41473159
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19531704
+              "duration": 28877797
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14311017
+              "duration": 35838573
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17355683
+              "duration": 41467568
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 52793562
+              "duration": 78489980
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 184081
+              "duration": 234531
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23288882
+              "duration": 24068847
             }
           },
           {
@@ -179,24 +179,24 @@
             "line": 18,
             "name": "the \"full name label\" should contain the text \"Name:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 3732586
+              "duration": 7554099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "the \"name\" should contain the text \"jhon\"",
+            "name": "the \"name\" should equal the text \"jhon\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 4541285
+              "duration": 7385292
             }
           },
           {
@@ -205,24 +205,24 @@
             "line": 20,
             "name": "the \"gender label\" should contain the text \"Gender:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 2886393
+              "duration": 7266366
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "the \"gender\" should contain the text \"Male\"",
+            "name": "the \"gender\" should equal the text \"Male\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 3225464
+              "duration": 8207675.999999999
             }
           },
           {
@@ -231,24 +231,24 @@
             "line": 22,
             "name": "the \"address label\" should contain the text \"Address:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 3573730
+              "duration": 6983518
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "the \"address\" should contain the text \"123 Test\"",
+            "name": "the \"address\" should equal the text \"123 Test, test\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:7"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 4044112
+              "duration": 10547848
             }
           },
           {
@@ -261,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4154054.9999999995
+              "duration": 6375631
             }
           },
           {
@@ -274,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3136850
+              "duration": 5234906
             }
           },
           {
@@ -282,7 +282,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55562946
+              "duration": 81772094
             }
           }
         ],

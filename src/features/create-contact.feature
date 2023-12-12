@@ -20,6 +20,6 @@ Feature: As a user I expect to be able to create contacts
     And the "gender label" should contain the text "Gender:"
     And the "gender" should equal the text "Male"
     And the "address label" should contain the text "Address:"
-    And the "address" should equal the text "123 Test, test"
+    And the "address" should equal the text "123 Test, testas"
     And the "edit" should be displayed
     And the "delete" should be displayed

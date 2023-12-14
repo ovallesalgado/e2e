@@ -54,15 +54,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref.apply(this, arguments);
   };
 }());
-(0, _cucumber.Then)(/^the "([^"]*)" should equal the text "([^"]*)"$/, /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(elementKey, expectedElementText) {
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? equal the text "([^"]*)"$/, /*#__PURE__*/function () {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(elementKey, negate, expectedElementText) {
     var page, globalConfig, elementIdentifier;
     return regeneratorRuntime.wrap(function _callee4$(_context4) {
       while (1) {
         switch (_context4.prev = _context4.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should equal the text ").concat(expectedElementText));
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context4.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
@@ -76,9 +76,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                     case 2:
                       elementText = _context3.sent;
-                      return _context3.abrupt("return", elementText === expectedElementText);
+                      console.log(elementText);
+                      console.log(expectedElementText);
+                      return _context3.abrupt("return", elementText === expectedElementText === !negate);
 
-                    case 4:
+                    case 6:
                     case "end":
                       return _context3.stop();
                   }
@@ -94,7 +96,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee4, this);
   }));
 
-  return function (_x4, _x5) {
+  return function (_x4, _x5, _x6) {
     return _ref3.apply(this, arguments);
   };
 }());

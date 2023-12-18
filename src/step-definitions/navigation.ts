@@ -1,12 +1,15 @@
 import { Given } from '@cucumber/cucumber'
-import { navigateToPage, currentPathMatchesPageId } from '../support/navigation-behavior';
-import { PageId } from '../env/global';
-import { waitFor } from '../support/wait-for-behavior';
-import { ScenarioWorld } from './setup/world';
+import { PageId } from '../env/global'
+import {
+    navigateToPage,
+    currentPathMatchesPageId,
+} from '../support/navigation-behavior';
+import {ScenarioWorld} from "./setup/world";
+import {waitFor} from "../support/wait-for-behavior";
 
 Given(
     /^I am on the "([^"]*)" page$/,
-    async function(pageId: PageId) {
+    async function(this: ScenarioWorld, pageId: PageId) {
         const {
             screen: { page },
             globalConfig,
@@ -16,7 +19,7 @@ Given(
 
         await navigateToPage(page, pageId, globalConfig);
 
-        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig));
+        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
 
     }
 )
@@ -29,8 +32,9 @@ Given(
             globalConfig,
         } = this;
 
-        console.log(`I am directed to the ${pageId} page`);
+        console.log(`I am directed to the ${pageId} page`)
 
-        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig));
+        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
+
     }
-);
+)

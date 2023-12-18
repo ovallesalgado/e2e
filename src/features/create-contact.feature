@@ -1,8 +1,7 @@
 Feature: As a user I expect to be able to create contacts
 
- @dev
-  # @smoke
-  # @regression
+  @smoke
+  @regression
   Scenario: As a user I expect to be able to create a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -26,3 +25,6 @@ Feature: As a user I expect to be able to create contacts
     And the "address" should equal the text "123 Fake Street, Melbourne"
     And the "edit" should be displayed
     And the "delete" should be displayed
+
+
+

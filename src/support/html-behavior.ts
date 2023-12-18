@@ -1,39 +1,39 @@
 import { Page } from 'playwright';
-import { ElementLocator } from '../env/global';
+import { ElementLocator } from '../env/global'
 
 export const clickElement = async (
-  page: Page,
-  elementIdentifier: ElementLocator
+    page: Page,
+    elementIdentifier: ElementLocator,
 ): Promise<void> => {
-  await page.click(elementIdentifier);
-};
+    await page.click(elementIdentifier)
+}
 
 export const inputValue = async (
-  page: Page,
-  elementIdentifier: ElementLocator,
-  input: string
+    page: Page,
+    elementIdentifier: ElementLocator,
+    input: string,
 ): Promise<void> => {
-  await page.focus(elementIdentifier);
-  await page.fill(elementIdentifier, input);
-};
+    await page.focus(elementIdentifier)
+    await page.fill(elementIdentifier, input)
+}
 
 export const selectValue = async (
-  page: Page,
-  elementIdentifier: ElementLocator,
-  option: string
-  ): Promise<void> => {
+    page: Page,
+    elementIdentifier: ElementLocator,
+    option: string,
+): Promise<void> => {
     await page.focus(elementIdentifier);
-    await page.selectOption(elementIdentifier, option);
-  };
-  
-  export const checkElement = async (
+    await page.selectOption(elementIdentifier, option)
+}
+
+export const checkElement = async (
     page: Page,
     elementIdentifier: ElementLocator
-  ): Promise<void> => {
+): Promise<void> => {
     await page.check(elementIdentifier);
-  };
+};
 
-  export const getValue = async (
+export const getValue = async (
     page: Page,
     elementIdentifier: ElementLocator
 ): Promise<string | null> => {
@@ -42,3 +42,4 @@ export const selectValue = async (
     });
     return value;
 };
+

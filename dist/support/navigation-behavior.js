@@ -66,10 +66,10 @@ var getCurrentPageId = function getCurrentPageId(page, globalConfig) {
 
   var currentPageId = pageConfigPageIds.find(function (pageId) {
     return pathMatchesPageId(currentPath, pageId, globalConfig);
-  }); // console.log("currentPageId ", currentPageId);
+  });
 
   if (!currentPageId) {
-    throw Error("Failed to get page name from current route ".concat(currentPath, ",       possible pages: ").concat(JSON.stringify(pagesConfig)));
+    throw Error("Failed to get page name from current route ".concat(currentPath, ",             possible pages: ").concat(JSON.stringify(pagesConfig)));
   }
 
   return currentPageId;

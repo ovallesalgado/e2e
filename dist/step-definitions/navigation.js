@@ -36,7 +36,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee, this);
   }));
 
-  return function (_x) {
+  return function (_x, _x2) {
     return _ref.apply(this, arguments);
   };
 }());
@@ -62,7 +62,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee2, this);
   }));
 
-  return function (_x2, _x3) {
+  return function (_x3, _x4) {
     return _ref2.apply(this, arguments);
   };
 }());

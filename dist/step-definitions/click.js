@@ -20,7 +20,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("I click the ".concat(elementKey, " (?:button|link|icon|element|radio button)"));
+            console.log("I click the ".concat(elementKey, " (?:button|link|icon|element)"));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {

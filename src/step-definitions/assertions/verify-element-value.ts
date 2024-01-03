@@ -41,8 +41,6 @@ Then(
 
         await waitFor(async () => {
             const elementText = await page.textContent(elementIdentifier);
-            console.log(elementText)
-            console.log(expectedElementText)
             return (elementText === expectedElementText) === !negate;
         });
     }

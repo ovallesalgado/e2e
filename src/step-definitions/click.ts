@@ -8,7 +8,7 @@ import { getElementLocator } from "../support/web-element-helper";
 import { ElementKey } from '../env/global'
 
 When(
-    /^I click the "([^"]*)" (?:button|link|icon|element)$/,
+    /^I click the "([^"]*)" (?:button|link|icon|element|check box)$/,
     async function(this: ScenarioWorld, elementKey: ElementKey) {
         const {
             screen: { page },

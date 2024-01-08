@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-checkboxes;as-a-user-i-can-interact-and-assert-on-checkboxes",
+        "id": "as-a-user-i-can-interact-with-iframes;as-a-user-i-can-interact-and-assert-on-iframes",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on checkboxes",
+        "name": "As a user I can interact and assert on iframes",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 428898135
+              "duration": 433065438
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 473938526
+              "duration": 531928124
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 91769246
+              "duration": 62497018
             }
           },
           {
@@ -53,98 +53,137 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2055807.9999999998
+              "duration": 898183
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "the \"blue\" check box should not be checked",
+            "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
+              "location": "src/step-definitions/iframe.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 446771211
+              "duration": 435587781
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "I check the \"green\" check box",
+            "name": "the \"contact\" on the \"basic iframe\" iframe should be displayed",
             "match": {
-              "location": "src/step-definitions/check.ts:11"
+              "location": "src/step-definitions/assertions/verify-iframe.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 64266301.99999999
+              "duration": 35283994
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "I check the \"grey\" check box",
+            "name": "the \"full name label\" on the \"basic iframe\" iframe should contain the text \"Name:\"",
             "match": {
-              "location": "src/step-definitions/check.ts:11"
+              "location": "src/step-definitions/assertions/verify-iframe.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 60032531
+              "duration": 39349053
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"red\" check box should not be checked",
+            "name": "the \"name\" on the \"basic iframe\" iframe should equal the text \"Abraham Perry\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
+              "location": "src/step-definitions/assertions/verify-iframe.ts:61"
             },
             "result": {
               "status": "passed",
-              "duration": 8998653
+              "duration": 33721789
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "the \"purple\" check box should not be checked",
+            "name": "the \"gender label\" on the \"basic iframe\" iframe should contain the text \"Gender:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
+              "location": "src/step-definitions/assertions/verify-iframe.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 6314104
+              "duration": 26490988
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "I uncheck the \"green\" check box",
+            "name": "the \"gender\" on the \"basic iframe\" iframe should equal the text \"Male\"",
             "match": {
-              "location": "src/step-definitions/check.ts:11"
+              "location": "src/step-definitions/assertions/verify-iframe.ts:61"
             },
             "result": {
               "status": "passed",
-              "duration": 47569735
+              "duration": 42223724
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "the \"green\" check box should not be checked",
+            "name": "the \"address label\" on the \"basic iframe\" iframe should contain the text \"Address:\"",
             "match": {
-              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
+              "location": "src/step-definitions/assertions/verify-iframe.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 11883326
+              "duration": 27124447
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"address\" on the \"basic iframe\" iframe should equal the text \"Ap #826-8849 Vulputate Street, Laramie\"",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-iframe.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28097565
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"edit\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-iframe.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29047010
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the \"delete\" on the \"basic iframe\" iframe should be displayed",
+            "match": {
+              "location": "src/step-definitions/assertions/verify-iframe.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32009663.000000004
             }
           },
           {
@@ -152,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 102832039
+              "duration": 90258173
             }
           }
         ],
@@ -173,11 +212,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-checkboxes",
+    "id": "as-a-user-i-can-interact-with-iframes",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with checkboxes",
+    "name": "As a user I can interact with iframes",
     "tags": [],
-    "uri": "src/features/playground/checkboxes.feature"
+    "uri": "src/features/playground/iframes.feature"
   }
 ]

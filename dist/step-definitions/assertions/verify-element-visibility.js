@@ -18,7 +18,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "be displayed"));
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not' : '', " be displayed"));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -53,49 +53,5 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
   return function (_x, _x2, _x3) {
     return _ref.apply(this, arguments);
-  };
-}());
-(0, _cucumber.Then)(/^the "([^"]*)" should( not)? be enabled$/, /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(elementKey, negate) {
-    var page, globalConfig, elementIdentifier;
-    return regeneratorRuntime.wrap(function _callee4$(_context4) {
-      while (1) {
-        switch (_context4.prev = _context4.next) {
-          case 0:
-            page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "be enabled"));
-            elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-            _context4.next = 5;
-            return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
-              var isElementVisible;
-              return regeneratorRuntime.wrap(function _callee3$(_context3) {
-                while (1) {
-                  switch (_context3.prev = _context3.next) {
-                    case 0:
-                      _context3.next = 2;
-                      return page.isEnabled(elementIdentifier);
-
-                    case 2:
-                      isElementVisible = _context3.sent;
-                      return _context3.abrupt("return", isElementVisible === !negate);
-
-                    case 4:
-                    case "end":
-                      return _context3.stop();
-                  }
-                }
-              }, _callee3);
-            })));
-
-          case 5:
-          case "end":
-            return _context4.stop();
-        }
-      }
-    }, _callee4, this);
-  }));
-
-  return function (_x4, _x5, _x6) {
-    return _ref3.apply(this, arguments);
   };
 }());

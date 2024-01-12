@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-iframes;as-a-user-i-can-interact-and-assert-on-iframes",
+        "id": "as-a-user-i-can-interact-with-switches;as-a-user-i-can-interact-and-assert-on-switches",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on iframes",
+        "name": "As a user I can interact and assert on switches",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 433065438
+              "duration": 492556552
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 531928124
+              "duration": 515273570.99999994
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 8,
             "name": "I click the \"playground\" button",
             "match": {
-              "location": "src/step-definitions/click.ts:10"
+              "location": "src/step-definitions/click.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 62497018
+              "duration": 65163241
             }
           },
           {
@@ -53,137 +53,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 898183
+              "duration": 2687727
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "I fill in the \"search\" input on the \"basic iframe\" iframe with \"Abraham Perry\"",
+            "name": "the \"switch one\" switch should be checked",
             "match": {
-              "location": "src/step-definitions/iframe.ts:11"
+              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 435587781
+              "duration": 379931944
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 11,
-            "name": "the \"contact\" on the \"basic iframe\" iframe should be displayed",
+            "name": "I uncheck the \"switch one\" switch",
             "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:8"
+              "location": "src/step-definitions/check.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 35283994
+              "duration": 52347005
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "the \"full name label\" on the \"basic iframe\" iframe should contain the text \"Name:\"",
+            "name": "the \"switch one\" switch should not be checked",
             "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:34"
+              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 39349053
+              "duration": 4969324
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the \"name\" on the \"basic iframe\" iframe should equal the text \"Abraham Perry\"",
+            "name": "I check the \"switch one\" switch",
             "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:61"
+              "location": "src/step-definitions/check.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 33721789
+              "duration": 175488630
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "the \"gender label\" on the \"basic iframe\" iframe should contain the text \"Gender:\"",
+            "name": "the \"switch one\" switch should be checked",
             "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:34"
+              "location": "src/step-definitions/assertions/verify-element-checked.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 26490988
+              "duration": 7085774
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "the \"gender\" on the \"basic iframe\" iframe should equal the text \"Male\"",
+            "name": "the \"switch two\" should not be enabled",
             "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:61"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:88"
             },
             "result": {
               "status": "passed",
-              "duration": 42223724
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the \"address label\" on the \"basic iframe\" iframe should contain the text \"Address:\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 27124447
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the \"address\" on the \"basic iframe\" iframe should equal the text \"Ap #826-8849 Vulputate Street, Laramie\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28097565
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"edit\" on the \"basic iframe\" iframe should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 29047010
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "the \"delete\" on the \"basic iframe\" iframe should be displayed",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-iframe.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 32009663.000000004
+              "duration": 8751476
             }
           },
           {
@@ -191,7 +139,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 90258173
+              "duration": 58735889
             }
           }
         ],
@@ -212,11 +160,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-iframes",
+    "id": "as-a-user-i-can-interact-with-switches",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with iframes",
+    "name": "As a user I can interact with switches",
     "tags": [],
-    "uri": "src/features/playground/iframes.feature"
+    "uri": "src/features/playground/switches.feature"
   }
 ]

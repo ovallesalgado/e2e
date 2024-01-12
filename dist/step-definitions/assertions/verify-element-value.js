@@ -20,7 +20,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText));
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not' : '', " contain the text ").concat(expectedElementText));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -56,7 +56,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _ref.apply(this, arguments);
   };
 }());
-(0, _cucumber.Then)(/^the "([^"]*)" should( not)? equal the text "([^"]*)"$/, /*#__PURE__*/function () {
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? equal the text "(.*)"$/, /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(elementKey, negate, expectedElementText) {
     var page, globalConfig, elementIdentifier;
     return regeneratorRuntime.wrap(function _callee4$(_context4) {
@@ -64,7 +64,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context4.prev = _context4.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText));
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not' : '', "equal the text ").concat(expectedElementText));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context4.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
@@ -96,11 +96,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee4, this);
   }));
 
-  return function (_x5, _x6, _x7) {
+  return function (_x5, _x6, _x7, _x8) {
     return _ref3.apply(this, arguments);
   };
 }());
-(0, _cucumber.Then)(/^the "([^"]*)" should( not)? contain the value "([^"]*)"$/, /*#__PURE__*/function () {
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? contain the value "(.*)"$/, /*#__PURE__*/function () {
   var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6(elementKey, negate, elementValue) {
     var page, globalConfig, elementIdentifier;
     return regeneratorRuntime.wrap(function _callee6$(_context6) {
@@ -108,7 +108,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context6.prev = _context6.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "contain the value ").concat(elementValue));
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not' : '', "contain the value ").concat(elementValue));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context6.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
@@ -140,11 +140,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee6, this);
   }));
 
-  return function (_x8, _x9, _x10) {
+  return function (_x9, _x10, _x11, _x12) {
     return _ref5.apply(this, arguments);
   };
 }());
-(0, _cucumber.Then)(/^the "([^"]*)" should( not)? equal the value "([^"]*)"$/, /*#__PURE__*/function () {
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? equal the value "(.*)"$/, /*#__PURE__*/function () {
   var _ref7 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8(elementKey, negate, elementValue) {
     var page, globalConfig, elementIdentifier;
     return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -152,7 +152,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context8.prev = _context8.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', "equal the value ").concat(elementValue));
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not' : '', "equal the value ").concat(elementValue));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context8.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
@@ -184,7 +184,98 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee8, this);
   }));
 
-  return function (_x11, _x12, _x13) {
+  return function (_x13, _x14, _x15, _x16) {
     return _ref7.apply(this, arguments);
+  };
+}());
+(0, _cucumber.Then)(/^the "([^"]*)" should( not)? be enabled$/, /*#__PURE__*/function () {
+  var _ref9 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(elementKey, negate) {
+    var page, globalConfig, elementIdentifier;
+    return regeneratorRuntime.wrap(function _callee10$(_context10) {
+      while (1) {
+        switch (_context10.prev = _context10.next) {
+          case 0:
+            page = this.screen.page, globalConfig = this.globalConfig;
+            console.log("the ".concat(elementKey, " should ").concat(negate ? 'not' : '', "be enabled"));
+            elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+            _context10.next = 5;
+            return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
+              var isElementEnabled;
+              return regeneratorRuntime.wrap(function _callee9$(_context9) {
+                while (1) {
+                  switch (_context9.prev = _context9.next) {
+                    case 0:
+                      _context9.next = 2;
+                      return page.isEnabled(elementIdentifier);
+
+                    case 2:
+                      isElementEnabled = _context9.sent;
+                      return _context9.abrupt("return", isElementEnabled === !negate);
+
+                    case 4:
+                    case "end":
+                      return _context9.stop();
+                  }
+                }
+              }, _callee9);
+            })));
+
+          case 5:
+          case "end":
+            return _context10.stop();
+        }
+      }
+    }, _callee10, this);
+  }));
+
+  return function (_x17, _x18, _x19) {
+    return _ref9.apply(this, arguments);
+  };
+}());
+(0, _cucumber.Then)(/^the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" "([^"]*)" should( not)? contain the text "(.*)"$/, /*#__PURE__*/function () {
+  var _ref11 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee12(elementPosition, elementKey, negate, expectedElementText) {
+    var _elementPosition$matc;
+
+    var page, globalConfig, elementIdentifier, index;
+    return regeneratorRuntime.wrap(function _callee12$(_context12) {
+      while (1) {
+        switch (_context12.prev = _context12.next) {
+          case 0:
+            page = this.screen.page, globalConfig = this.globalConfig;
+            console.log("the ".concat(elementPosition, " ").concat(elementKey, " should ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText));
+            elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
+            index = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
+            _context12.next = 6;
+            return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+              var elementText;
+              return regeneratorRuntime.wrap(function _callee11$(_context11) {
+                while (1) {
+                  switch (_context11.prev = _context11.next) {
+                    case 0:
+                      _context11.next = 2;
+                      return page.textContent("".concat(elementIdentifier, ">>nth=").concat(index));
+
+                    case 2:
+                      elementText = _context11.sent;
+                      return _context11.abrupt("return", (elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate);
+
+                    case 4:
+                    case "end":
+                      return _context11.stop();
+                  }
+                }
+              }, _callee11);
+            })));
+
+          case 6:
+          case "end":
+            return _context12.stop();
+        }
+      }
+    }, _callee12, this);
+  }));
+
+  return function (_x20, _x21, _x22, _x23) {
+    return _ref11.apply(this, arguments);
   };
 }());

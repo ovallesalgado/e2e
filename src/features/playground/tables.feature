@@ -1,5 +1,5 @@
 Feature: As a user I can interact with tables
- 
+
   @smoke
   @regression
   Scenario: As a user I can interact and assert on tables
@@ -18,3 +18,6 @@ Feature: As a user I can interact with tables
       | 262 | 16  | 24 | 6   |
       | 305 | 3.4 | 67 | 4.3 |
       | 356 | 16  | 49 | 3.9 |
+
+
+

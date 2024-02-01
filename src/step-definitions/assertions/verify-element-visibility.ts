@@ -37,8 +37,8 @@ Then(
         const index = Number(elementPosition.match(/\d/g)?.join('')) - 1;
 
         await waitFor(async () => {
-        const isElementVisible = (await page.$(`${elementIdentifier}>>nth=${index}`)) != null
-        return isElementVisible === !negate
+          const isElementVisible = (await page.$(`${elementIdentifier}>>nth=${index}`)) != null
+          return isElementVisible === !negate
         })
     }
 )

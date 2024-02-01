@@ -12,4 +12,3 @@ Feature: As a user I can interact with cards
     And the "card overview" should contain the text "Automate the execution of tests"
     And the "card overview" should contain the text ""compares actual with expected""
     And the "card action" should contain the text "Learn More"
-    # And I wait "1" seconds

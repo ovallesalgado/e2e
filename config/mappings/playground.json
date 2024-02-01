@@ -4,12 +4,12 @@
   "female label" : "[data-id='female-radio-button']",
   "male label" : "[data-id='male-radio-button']",
   "movies" : "[id='movies-input']",
-  "The Godfather" : "//li[text()='The Godfather']",
+  "the godfather" : "//li[text()='The Godfather']",
   "outlined required" : "[id='outlined-required']",
   "outlined disabled" : "[id='outlined-disabled']",
   "outlined read only" : "[id='outlined-read-only-input']",
-  "validation label" : "[id='outlined-error-helper-text-label']",
-  "validation error" : "[id='outlined-error-helper-text-helper-text']",
+  "outlined error" : "[id='outlined-error-helper-text-label']",
+  "outlined error text" : "[id='outlined-error-helper-text-helper-text']",
   "blue" : "[data-id='blue-radio-button']",
   "purple" : "[data-id='purple-radio-button']",
   "green" : "[data-id='green-radio-button']",
@@ -27,7 +27,7 @@
   "switch two" : "[data-id='switch-two']",
   "browser alert" : "[data-id='browser-alert']",
   "error alert" : "[data-id='error-alert']",
-  "warning alert": "[data-id='warning-alert']",
+  "warning alert" : "[data-id='warning-alert']",
   "info alert" : "[data-id='info-alert']",
   "success alert" : "[data-id='success-alert']",
   "tooltip" : "[data-id='tooltip']",
@@ -50,6 +50,7 @@
   "drop down profile" : "[data-id='drop-down-profile']",
   "drop down my account" : "[data-id='drop-down-my-account']",
   "drop down logout" : "[data-id='drop-down-logout']",
-  "age" : "[name='age']"
+  "age" : "[name='age']",
+  "email" : "[data-id='email']",
+  "password" : "[data-id='password']"
 }
-

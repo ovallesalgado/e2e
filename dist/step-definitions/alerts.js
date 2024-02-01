@@ -14,7 +14,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context.prev = _context.next) {
           case 0:
             page = this.screen.page;
-            console.log("I click ".concat(dismissDialog ? 'dismiss ' : 'accept ', " on the alert dialog"));
+            console.log("I click ".concat(dismissDialog ? 'dismiss ' : 'accept ', "on the alert dialog"));
 
             if (!!dismissDialog) {
               page.on('dialog', function (dialog) {

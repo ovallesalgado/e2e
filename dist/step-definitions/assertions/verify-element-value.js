@@ -236,7 +236,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   var _ref11 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee12(elementPosition, elementKey, negate, expectedElementText) {
     var _elementPosition$matc;
 
-    var page, globalConfig, elementIdentifier, index;
+    var page, globalConfig, elementIdentifier, pageIndex;
     return regeneratorRuntime.wrap(function _callee12$(_context12) {
       while (1) {
         switch (_context12.prev = _context12.next) {
@@ -244,7 +244,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             page = this.screen.page, globalConfig = this.globalConfig;
             console.log("the ".concat(elementPosition, " ").concat(elementKey, " should ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-            index = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
+            pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
             _context12.next = 6;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
               var elementText;
@@ -253,7 +253,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   switch (_context11.prev = _context11.next) {
                     case 0:
                       _context11.next = 2;
-                      return page.textContent("".concat(elementIdentifier, ">>nth=").concat(index));
+                      return page.textContent("".concat(elementIdentifier, ">>nth=").concat(pageIndex));
 
                     case 2:
                       elementText = _context11.sent;
@@ -275,7 +275,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee12, this);
   }));
 
-  return function (_x20, _x21, _x22, _x23) {
+  return function (_x20, _x21, _x22, _x23, _x24) {
     return _ref11.apply(this, arguments);
   };
 }());
@@ -319,7 +319,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }, _callee14, this);
   }));
 
-  return function (_x24, _x25, _x26, _x27, _x28) {
+  return function (_x25, _x26, _x27, _x28, _x29) {
     return _ref13.apply(this, arguments);
   };
 }());

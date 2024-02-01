@@ -1,12 +1,12 @@
 import { Given } from '@cucumber/cucumber'
-import { PageId } from '../env/global'
 import {
-    navigateToPage,
     currentPathMatchesPageId,
-    reloadPage
+    navigateToPage,
+    reloadPage,
 } from '../support/navigation-behavior';
-import {ScenarioWorld} from "./setup/world";
-import {waitFor} from "../support/wait-for-behavior";
+import { ScenarioWorld } from './setup/world';
+import { waitFor } from '../support/wait-for-behavior';
+import { PageId } from '../env/global';
 
 Given(
     /^I am on the "([^"]*)" page$/,
@@ -20,7 +20,7 @@ Given(
 
         await navigateToPage(page, pageId, globalConfig);
 
-        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
+        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig));
 
     }
 )
@@ -33,12 +33,11 @@ Given(
             globalConfig,
         } = this;
 
-        console.log(`I am directed to the ${pageId} page`)
+        console.log(`I am directed to the ${pageId} page`);
 
-        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
-
+        await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig));
     }
-)
+);
 
 Given(
     /^I refresh the "([^"]*)" page$/,

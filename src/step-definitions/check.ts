@@ -10,28 +10,28 @@ import { ElementKey } from '../env/global'
 
 Then(
     /^I (check)?(uncheck)? the "([^"]*)" (?:check box|radio button|switch)$/,
-    async function (this: ScenarioWorld, checked: boolean, unchecked: boolean, elementKey: ElementKey) {
+    async function(this: ScenarioWorld, checked: boolean, unchecked: boolean, elementKey: ElementKey) {
         const {
             screen: { page },
             globalConfig,
         } = this;
 
-        console.log(`I ${unchecked ? 'uncheck ' : 'check'} the ${elementKey} check box|radio button`);
+        console.log(`I ${unchecked?'uncheck ':'check'} the ${elementKey} check box|radio button`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
 
         await waitFor(async () => {
-            const result = await page.waitForSelector(elementIdentifier, {
-                state: 'visible',
-            })
-            if (result) {
-                if (!!unchecked) {
-                    await uncheckElement(page, elementIdentifier)
-                } else {
-                    await checkElement(page, elementIdentifier);
-                }
-            }
-            return result;
+          const result = await page.waitForSelector(elementIdentifier, {
+              state: 'visible',
+          })
+          if (result) {
+              if (!!unchecked) {
+                  await uncheckElement(page, elementIdentifier)
+              } else {
+                  await checkElement(page, elementIdentifier);
+              }
+          }
+          return result;
         })
 
     }

@@ -1,6 +1,5 @@
 Feature: As a user I can interact with browser alerts
 
-  
   @smoke
   @regression
   Scenario: As a user I can interact and assert on browser alerts
@@ -9,5 +8,6 @@ Feature: As a user I can interact with browser alerts
     When I am directed to the "playground" page
     And I click the "browser alert" button
     Then I click accept on the alert dialog
-    And I click the "browser alert" link
+    And I click the "browser alert" button
     And I click dismiss on the alert dialog
+

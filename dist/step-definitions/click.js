@@ -12,7 +12,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-(0, _cucumber.When)(/^I click the "([^"]*)" (?:button|link|icon|element|check box)$/, /*#__PURE__*/function () {
+(0, _cucumber.When)(/^I click the "([^"]*)" (?:button|link)$/, /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(elementKey) {
     var page, globalConfig, elementIdentifier;
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
@@ -20,7 +20,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("I click the ".concat(elementKey, " (?:button|link|icon|element)"));
+            console.log("I click the ".concat(elementKey, " (?:button|link|icon|element|radio button)"));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context2.next = 5;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -78,7 +78,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context4.prev = _context4.next) {
           case 0:
             page = this.screen.page, globalConfig = this.globalConfig;
-            console.log("I click the $".concat(elementPosition, " ").concat(elementKey, " (?:button|link|icon|element|radio button)"));
+            console.log("I click ".concat(elementPosition, " ").concat(elementKey, " button|link"));
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
             _context4.next = 6;

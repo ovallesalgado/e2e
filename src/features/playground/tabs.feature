@@ -2,7 +2,7 @@ Feature: As a user I can interact with tabs
 
   @smoke
   @regression
-  Scenario: As a user I can interact and assert with new tabs
+  Scenario: As a user I can interact and assert on new tabs
     Given I am on the "home" page
     And I click the "playground" button
     When I am directed to the "playground" page
@@ -19,3 +19,7 @@ Feature: As a user I can interact with tabs
     And the "address" on the "2nd" tab should equal the text "8162 Tincidunt Rd., Ludhiana"
     And the "edit" on the "2nd" tab should be displayed
     And the "delete" on the "2nd" tab should be displayed
+
+
+
+

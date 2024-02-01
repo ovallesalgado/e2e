@@ -1,6 +1,5 @@
 Feature: As a user I can interact with page alerts
 
-
   @smoke
   @regression
   Scenario: As a user I can interact and assert on page alerts

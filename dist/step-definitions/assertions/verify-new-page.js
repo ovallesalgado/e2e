@@ -21,15 +21,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context2.prev = _context2.next) {
           case 0:
             _this$screen = this.screen, page = _this$screen.page, context = _this$screen.context;
-            console.log("the ".concat(elementPosition, " tab should ").concat(negate ? 'not ' : '', "contain the title ").concat(expectedTitle));
+            console.log("the ".concat(elementPosition, " window|tab should ").concat(negate ? 'not ' : '', "contain the title ").concat(expectedTitle));
             pageIndex = Number((_elementPosition$matc = elementPosition.match(/\d/g)) === null || _elementPosition$matc === void 0 ? void 0 : _elementPosition$matc.join('')) - 1;
             _context2.next = 5;
-            return page.waitForTimeout(1000);
+            return page.waitForTimeout(2000);
 
           case 5:
             _context2.next = 7;
             return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-              var pages, tabTitle;
+              var pages, pageTitle;
               return regeneratorRuntime.wrap(function _callee$(_context) {
                 while (1) {
                   switch (_context.prev = _context.next) {
@@ -39,8 +39,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                       return pages[pageIndex].title();
 
                     case 3:
-                      tabTitle = _context.sent;
-                      return _context.abrupt("return", (tabTitle === null || tabTitle === void 0 ? void 0 : tabTitle.includes(expectedTitle)) === !negate);
+                      pageTitle = _context.sent;
+                      return _context.abrupt("return", (pageTitle === null || pageTitle === void 0 ? void 0 : pageTitle.includes(expectedTitle)) === !negate);
 
                     case 5:
                     case "end":
@@ -73,7 +73,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context4.prev = _context4.next) {
           case 0:
             _this$screen2 = this.screen, page = _this$screen2.page, context = _this$screen2.context, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " on the ").concat(elementPosition, " tab|window should ").concat(negate ? 'not ' : '', "be displayed"));
+            console.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? 'not ' : '', "be displayed"));
             pageIndex = Number((_elementPosition$matc2 = elementPosition.match(/\d/g)) === null || _elementPosition$matc2 === void 0 ? void 0 : _elementPosition$matc2.join('')) - 1;
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context4.next = 6;
@@ -123,7 +123,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context6.prev = _context6.next) {
           case 0:
             _this$screen3 = this.screen, page = _this$screen3.page, context = _this$screen3.context, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " on the ").concat(elementPosition, " tab|window should ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText));
+            console.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText));
             pageIndex = Number((_elementPosition$matc3 = elementPosition.match(/\d/g)) === null || _elementPosition$matc3 === void 0 ? void 0 : _elementPosition$matc3.join('')) - 1;
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context6.next = 6;
@@ -172,7 +172,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         switch (_context8.prev = _context8.next) {
           case 0:
             _this$screen4 = this.screen, page = _this$screen4.page, context = _this$screen4.context, globalConfig = this.globalConfig;
-            console.log("the ".concat(elementKey, " on the ").concat(elementPosition, " tab|window should ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText));
+            console.log("the ".concat(elementKey, " on the ").concat(elementPosition, " window|tab should ").concat(negate ? 'not ' : '', "equal the text ").concat(expectedElementText));
             pageIndex = Number((_elementPosition$matc4 = elementPosition.match(/\d/g)) === null || _elementPosition$matc4 === void 0 ? void 0 : _elementPosition$matc4.join('')) - 1;
             elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
             _context8.next = 6;

@@ -70,8 +70,8 @@ var ScenarioWorld = /*#__PURE__*/function (_World) {
               browserType = _playwright.default[automationBrowser];
               _context.next = 5;
               return browserType.launch({
-                headless: process.env.HEADLESS !== 'false',
                 devtools: process.env.DEVTOOLS !== 'false',
+                headless: process.env.HEADLESS !== 'false',
                 args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process']
               });
 

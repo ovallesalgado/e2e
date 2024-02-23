@@ -1,5 +1,5 @@
 import { Page } from 'playwright';
-import { GlobalConfig, GlobalVariables, PageId } from '../env/global';
+import {GlobalConfig, GlobalVariables, PageId} from '../env/global';
 
 export const navigateToPage = async (
     page: Page,
@@ -56,7 +56,7 @@ export const getCurrentPageId = (
     if (!currentPageId) {
         throw Error(
             `Failed to get page name from current route ${currentPath}, \
-        possible pages: ${JSON.stringify(pagesConfig)}`
+      possible pages: ${JSON.stringify(pagesConfig)}`
         );
     }
 

@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-login-forms;as-a-user-i-can-populate-login-details-leveraging-environment-variables---localhost",
+        "id": "as-a-user-i-expect-to-be-able-to-create-contacts;as-a-user-i-expect-to-be-able-to-create-a-new-contact",
         "keyword": "Scenario",
         "line": 5,
-        "name": "As a user I can populate login details leveraging environment variables - localhost",
+        "name": "As a user I expect to be able to create a new contact",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 460669154
+              "duration": 530809073
             }
           },
           {
@@ -23,89 +23,37 @@
             "line": 6,
             "name": "I am on the \"home\" page",
             "match": {
-              "location": "src/step-definitions/navigation.ts:11"
+              "location": "src/step-definitions/navigation.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2650377153
+              "duration": 507946422
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I click the \"playground\" button",
+            "name": "the \"header logo\" should be displayed",
             "match": {
-              "location": "src/step-definitions/click.ts:11"
+              "location": "src/step-definitions/assertions/verify-element-visibility.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 377162141
+              "duration": 21808224
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 8,
-            "name": "I am directed to the \"playground\" page",
+            "name": "the \"contacts header\" should contain the text \"Contacts\"",
             "match": {
-              "location": "src/step-definitions/navigation.ts:28"
+              "location": "src/step-definitions/assertions/verify-element-value.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1484611
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I fill in the \"email\" input with \"$.TEST_EMAIL\"",
-            "match": {
-              "location": "src/step-definitions/form.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 644773764
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I fill in the \"password\" input with \"$.TEST_PASSWORD\"",
-            "match": {
-              "location": "src/step-definitions/form.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 39654427
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the \"email\" should contain the value \"admin@testingtalkshub.com.au\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 19634202
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"password\" should contain the value \"Password1234\"",
-            "match": {
-              "location": "src/step-definitions/assertions/verify-element-value.ts:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 17447749
+              "duration": 9285875
             }
           },
           {
@@ -113,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78227453
+              "duration": 62048489
             }
           }
         ],
@@ -134,11 +82,11 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-user-i-can-interact-with-login-forms",
+    "id": "as-a-user-i-expect-to-be-able-to-create-contacts",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a user I can interact with login forms",
+    "name": "As a user I expect to be able to create contacts",
     "tags": [],
-    "uri": "src/features/playground/login.feature"
+    "uri": "src/features/home-page.feature"
   }
 ]
